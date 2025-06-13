@@ -18,7 +18,7 @@ Exploit SQL Injection in the login page and extract user credentials.
 
  1. Navigate to the SQL Injection module in DVWA:
 ```
-http://localhost/dvwa/vulnerabilities/sqli/
+http://localhost:3000/dvwa/vulnerabilities/sqli/
 ```
 
 ### 2. Interact with the input field:
