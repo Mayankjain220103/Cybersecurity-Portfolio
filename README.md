@@ -5,7 +5,7 @@ A practical showcase of my cybersecurity skills, focusing on vulnerability asses
 ---
 
 📁 Web-App-Testing
-*Real-world testing writeups and PoCs against purposely vulnerable applications.*
+*Real-world testing writeups against purposely vulnerable applications.*
 
 - `DVWA-SQLi-Walkthrough.md` – SQL injection test case with payloads and output
 - `XSS-on-JuiceShop.md` – Stored and reflected XSS on OWASP Juice Shop
