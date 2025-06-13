@@ -1,4 +1,4 @@
-Broken-Auth-Test-OWASPJuice.md` – Session fixation, weak token, and IDOR test cases
+Broken-Auth-Test-OWASPJuice.md – Session fixation, weak token, and IDOR test cases
 
 ### Broken-Auth-Test-OWASPJuice.md
 ```markdown
