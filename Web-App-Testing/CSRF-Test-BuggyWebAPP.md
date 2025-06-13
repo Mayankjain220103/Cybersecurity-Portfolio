@@ -33,7 +33,7 @@ password_new=test123&password_conf=test123&form=submit
 
 ### 3. Create Malicious CSRF Page
 
-```
+
 
 <!DOCTYPE html>
 <html>
